@@ -1,0 +1,17 @@
+html,
+body {
+  height: 100dvh;
+}
+
+.home-header {
+  position: relative;
+  height: 100%;
+
+  background-color: $deep;
+  color: white;
+  //padding-top: $size;
+}
+
+.home-header__content {
+  height: 100%;
+}

@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+  // scrollbar-gutter: stable;
+}
+
+body {
+  background: #323232;
+  font-family: $user-font;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $text-color;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+// CATALOG
+body {
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+// input,
+// textarea {
+//   outline: none;
+//   &:focus:required:invalid {
+//     border-color: red;
+//     &:required:valid {
+//       border-color: green;
+//     }
+//   }
+// }

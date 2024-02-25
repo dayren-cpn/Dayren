@@ -1,0 +1,16 @@
+@mixin font($font-name, $font-style, $font-weight, $font-url) {
+  @font-face {
+    font-family: $font-name;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url($font-url) format("woff2");
+  }
+}
+
+// CYRILLIC
+@include font("poiret", normal, 400, "../fonts/Poiret-One.woff2");
+
+@include font("dune", normal, 100, "../fonts/Dune Rise.woff2");
+
+@include font("jose", normal, 100, "../fonts/Josefin-Sans-ThinItalic.woff2");
+@include font("abor", normal, 100, "../fonts/Abor-Regular.woff2");

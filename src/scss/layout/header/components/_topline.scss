@@ -1,0 +1,127 @@
+.top-line {
+  position: fixed;
+  width: 100%;
+  //height: clamp(3.75rem, 3.482rem + 1.339vw, 4.688rem);
+  height: $block-size;
+  top: 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(white, $border-opacity);
+  background-color: $deep;
+  z-index: 10;
+}
+
+// LOGO
+.logo {
+  height: 100%;
+  flex: 0 0 200px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+
+  &-images__wrapper {
+    width: clamp(3.125rem, 2.344rem + 2.604vw, 4.688rem);
+    padding: 0.1rem;
+    @include flex-center;
+  }
+
+  &-text {
+    //font-size: $font-size;
+    font-size: clamp(0.625rem, 0.438rem + 0.625vw, 1rem);
+    font-family: $logo-font;
+    transition: scale 0.2s ease-out;
+  }
+}
+
+@media (any-hover: hover) {
+  .logo-text:hover {
+    transition: 0.3s ease-out;
+    scale: 1.1;
+  }
+}
+
+// DECORATION
+.top-line__decoration {
+  flex: 1 0 0;
+  text-align: center;
+
+  &::before {
+    content: "";
+    height: 1px;
+    width: 50px;
+    background-color: white;
+    display: inline-block;
+    opacity: $border-opacity * 1.5;
+    position: relative;
+    top: -5px;
+  }
+}
+
+@media (max-width: 990px) {
+  .top-line__decoration::before {
+    display: none;
+  }
+}
+
+// CONTACTS
+.top-line__contacts {
+  font-family: $user-font;
+  font-size: $font-size;
+  letter-spacing: 0.1em;
+  color: rgba(white, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 990px) {
+  .top-line__phone {
+    display: none;
+  }
+
+  .top-line__number {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    border-bottom: 1px solid rgba(white, 0.3);
+
+    &::before {
+      content: "тел. ";
+      font-size: 9px;
+    }
+  }
+}
+
+.top-line__separator {
+  width: 0.1rem;
+  height: 2.5rem;
+  background-color: rgba(white, $border-opacity * 2);
+  margin: 20px;
+}
+
+.top-line__number,
+.top-line_text {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-left: 0.7rem;
+}
+
+@media (max-width: 990px) {
+  .top-line__separator,
+  .top-line__address {
+    display: none;
+  }
+}
+
+// MENU
+.menu-container {
+  height: $block-size;
+  width: $block-size;
+  text-align: right;
+  flex: 0 0 200px;
+}

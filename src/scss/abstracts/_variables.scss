@@ -1,0 +1,32 @@
+// переменные
+
+$accent: brown; // Accent color
+$text-color: #333; // Text color
+
+$dark: #303030;
+$deep: #252525;
+
+$index: calc(1vw + 1vh);
+$size: calc($index * 2);
+$block-size: clamp(3.125rem, 2.5rem + 2.083vw, 4.375rem); // 50px - 70px
+
+$line-height: 1.7;
+
+$font-size: clamp(0.75rem, 0.679rem + 0.357vw, 1rem); //12px - 16px / 320 - 1440
+$font-size-title: clamp(1rem,0.938rem + 0.208vw,1.125rem); //16px - 18px / 480 - 1440
+
+$user-font: poiret, sans-serif;
+$logo-font: dune;
+$system-font: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+$border-opacity: 0.1;
+
+// CATALOG
+$gutter: 10px; // отступ между элементами
+
+$side-small: 15; // размер
+$side-big: 25; // элементов
+
+$depth: 4000px;
+
+$transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
