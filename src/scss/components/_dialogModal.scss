@@ -8,6 +8,7 @@ dialog {
   height: clamp(29rem, 31.286rem + 8.57vw, 39rem);
 
   background-color: $deep;
+  z-index: 100;
   &::backdrop {
     backdrop-filter: blur(5px);
   }
@@ -124,3 +125,16 @@ form {
 }
 
 // ANIMATION DIALOG OPEN
+.scale-center {
+  animation: scale-center 0.7s ease-out;
+}
+
+@keyframes scale-center {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

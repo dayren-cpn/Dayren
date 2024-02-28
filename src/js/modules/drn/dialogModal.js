@@ -2,6 +2,13 @@ const dialog = document.querySelector('#myDialog')
 const dialogOpener = document.querySelector('#openDialogButton')
 const dialogCloser = document.querySelector('#closeDialogButton')
 
+dialog.addEventListener('click', closeOnBackDropClick)
+dialogOpener.addEventListener('click', openModalAndLockScroll)
+dialogCloser.addEventListener('click', (event) => {
+   event.stopPropagation()
+   close()
+})
+
 function closeOnBackDropClick({ currentTarget, target }) {
    const dialog = currentTarget
    const isClickedOnBackDrop = target === dialog
@@ -25,9 +32,3 @@ function close() {
    returnScroll()
 }
 
-dialog.addEventListener('click', closeOnBackDropClick)
-dialogOpener.addEventListener('click', openModalAndLockScroll)
-dialogCloser.addEventListener('click', (event) => {
-   event.stopPropagation()
-   close()
-})
