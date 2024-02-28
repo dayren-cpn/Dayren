@@ -58,9 +58,10 @@
 
 
       <!-- OPEN DIALOG BUTTON -->
-      <button class="openDialogButton" type="button" aria-haspopup="dialog" aria-controls="myDialog">
-         click
+      <button class="button openDialogButton " type="button" aria-haspopup="dialog" aria-controls="myDialog">
+         <a>Оставить заявку</a>
       </button>
+
    </div>
 
    <style>
@@ -84,29 +85,6 @@
          font-size: 3em;
          text-transform: uppercase;
       }
-
-      .openDialogButton {
-         display: inline-block;
-         position: absolute;
-         top: 7rem;
-         right: 3rem;
-         width: 9rem;
-         height: 3rem;
-
-         color: white;
-         font-size: 1.3em;
-         text-transform: uppercase;
-
-         border: 1px solid var(--accent);
-
-         transition: .5s ease-out;
-      }
-
-      .openDialogButton:hover {
-         letter-spacing: .2rem;
-         background-color: #272727;
-      }
-
    </style>
 
    <script>

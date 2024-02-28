@@ -1,6 +1,6 @@
-const dialog = document.getElementById('myDialog')
-const dialogOpener = document.querySelector('.openDialogButton')
-const dialogCloser = document.querySelector('.closeDialogButton')
+const dialog = document.querySelector('#myDialog')
+const dialogOpener = document.querySelector('#openDialogButton')
+const dialogCloser = document.querySelector('#closeDialogButton')
 
 function closeOnBackDropClick({ currentTarget, target }) {
    const dialog = currentTarget
