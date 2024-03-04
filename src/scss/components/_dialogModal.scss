@@ -124,6 +124,17 @@ form {
   left: 0%;
 }
 
+// ANIMATION INPUTBOX
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    // background-position-x: 350px;
+    background-position-x: clamp(14.375rem, 11.696rem + 13.393vw, 23.75rem);
+  }
+}
+
 // ANIMATION DIALOG OPEN
 .scale-center {
   animation: scale-center 0.7s ease-out;
